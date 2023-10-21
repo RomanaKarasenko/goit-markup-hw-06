@@ -35,7 +35,7 @@ body {
   max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
-  margin: auto;
+  margin: 0  auto;
    
 }
 
@@ -154,13 +154,14 @@ body {
 }
 
 
+
 /*First section*/
 
 .firstsection {
     background-color:#2e2f42;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/people-office.jpg);
-    max-width: 1440px;
+    width: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -458,7 +459,6 @@ flex-direction: column;
   width: 100%;
 }
 .fouritems {
-    
   border: 1px solid #e7e9fc;
   border-top: none;
   display: flex;
@@ -666,7 +666,8 @@ flex-direction: column;
  /*Modalwindow*/
 
  .modalwindow {
-    position: fixed;
+  
+    position:absolute ;
     top: 0;
     left: 0;
     width: 100%;
@@ -681,8 +682,8 @@ flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -875,19 +876,119 @@ flex-direction: column;
 
 /*Media*/
 
-@media screen and (min-width:320px)
+/*@media screen and (min-width:320px)*/
     
 
-/*
 @media screen and (min-width: 768px){
     .container {
         max-width: 768px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
         margin: auto;
        }
        
+      .one{
+        width: 768px;
+      }
+      .address-menu{
+        display: flex;
+        flex-direction: column;
+         gap: 8px;
+
 }
+      .firstsection{
+        width: 768px;
+        margin:auto;
+
+      }
+       .firsttitle{
+        width: 496px; 
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px; /* 107.143% */
+        letter-spacing: 1.12px; 
+        text-align: center; 
+       }
+       .btn{
+        padding: 16px 32px;
+        align-items:center;
+        gap: 10px; 
+       }
+       .secondcontainerul{
+        max-width: 768px; ;
+       }
+       .secondcontainerul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Розбиває контейнер на дві колонки рівного розміру */
+        gap: 20px; /* Відступ між елементами */
+      }
+      .sectionthree{
+        width: 768px;
+      }
+      
+      .thirdul{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-column-gap: 24px; /* Відступ між елементами по горизонталі */
+        padding: 0 108px;
+        
+      }
+      .sectionfour{
+        width: 768px;
+       
+      }
+      
+      .four{
+        display: block;
+      align-items: center;
+      }
+       .fourul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-column-gap: 36px; /* Відступ між елементами по горизонталі */
+        
+        
+  }
+       .fourli{
+        width: 356px; ;
+       }
+     
+        .footcont{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: baseline;
+          justify-content: center;
+          
+          
+        }
+
+       .footerlogocontainer{
+        width: 246px;
+        margin-right: 36px;
+       }
+        .sociconsfooter{
+         width:  208px;
+        }
+        .formcontainer{
+          width: 453px;}
+         
+        .realform{
+          flex-direction: row; /* Розташовує елементи горизонтально в ряд */
+          justify-content: center;
+          
+        }
+        .formparagraph {
+          text-align: left;
+        }
+        .socmedia{
+          text-align: left;
+        }
+        .logofooter{
+          text-align: start;
+        }
+       }
+
     
 
 
