@@ -1,10 +1,3 @@
-/* TODO
-1. Unite selectors;
-2. Use variables;
-3. Fix responsive;
-4. Split css into multiple files; use @import;  
-5. Use proper names for selectors, divide words with hyphen (-)
-*/
 
 :root {
   --min-adaptive-width: 320px;
@@ -78,8 +71,9 @@ body {
   margin-left: auto;
   background-color: transparent;
   border: none;
-  color: #ffffff;
+  color: #2E2F42;
   margin-bottom: 32px;
+  
 }
 .header-mob-menu-item {
   display: flex;
@@ -91,10 +85,10 @@ body {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 40px; 
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  text-decoration: none; /* Відключаємо підкреслення */
+  text-decoration: none;
   margin-left: 16px;
 }
 
@@ -110,7 +104,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 24px; 
   letter-spacing: 0.4px;
   color: #434455;
 }
@@ -118,8 +112,6 @@ body {
   margin-bottom: 24px;
 }
 
-.mob-addresslink {
-}
 
 @media screen and (min-width: 1158px) {
   .header {
@@ -259,6 +251,9 @@ body {
   color: #404bbf;
 }
 
+
+
+
 /*First section*/
 
 .firstsection {
@@ -268,11 +263,23 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Mob/mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .firstsection {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Mob/twoexemob.jpg);
+  }
 }
 
 .one {
@@ -367,7 +374,7 @@ body {
   list-style-type: none;
   margin-bottom: 8px;
   align-self: stretch;
-  text-align: center;
+  text-align: start;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
@@ -379,6 +386,7 @@ body {
 
 .secondtext {
   align-self: stretch;
+  text-align: start;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
@@ -560,7 +568,7 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
+  
 }
 .fouritems {
   border: 1px solid #e7e9fc;
@@ -1000,6 +1008,15 @@ body {
     flex-direction: column;
     gap: 8px;
   }
+  .header-menu {
+    color: #2e2f42;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+  }
+
   .windowin {
     width: 408px;
     height: 584px;
@@ -1014,7 +1031,15 @@ body {
 
   .firstsection {
     margin: auto;
-  }
+    background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet.jpg);
+     
+    }
+    
+  
   .firsttitle {
     width: 496px;
     font-style: normal;
@@ -1111,6 +1136,7 @@ body {
   }
   .logofooter {
     text-align: start;
+    display: block;
   }
 }
 
