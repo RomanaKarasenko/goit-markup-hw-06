@@ -1,4 +1,3 @@
-
 :root {
   --min-adaptive-width: 320px;
   --medium-adaptive-width: 768px;
@@ -71,9 +70,18 @@ body {
   margin-left: auto;
   background-color: transparent;
   border: none;
-  color: #2E2F42;
+  color: #2e2f42;
   margin-bottom: 32px;
-  
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mob-menu-item {
   display: flex;
@@ -85,7 +93,7 @@ body {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px; 
+  line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   text-decoration: none;
@@ -104,14 +112,20 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; 
+  line-height: 24px;
   letter-spacing: 0.4px;
   color: #434455;
 }
 .address-mob-menu-items:first-child {
   margin-bottom: 24px;
 }
+.address-mob-menu-items:hover {
+  color: #404bbf;
+}
 
+.address-mob-menu-items:focus {
+  color: #404bbf;
+}
 
 @media screen and (min-width: 1158px) {
   .header {
@@ -251,9 +265,6 @@ body {
   color: #404bbf;
 }
 
-
-
-
 /*First section*/
 
 .firstsection {
@@ -275,10 +286,10 @@ body {
   (min-resolution: 2dppx) {
   .firstsection {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/Mob/twoexemob.jpg);
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Mob/twoexemob.jpg);
   }
 }
 
@@ -355,7 +366,6 @@ body {
   width: 100%;
   position: relative;
   gap: 8px;
-  /*width: calc((100% - 72px) / 4);*/
 }
 
 .secondicon {
@@ -379,7 +389,7 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
@@ -389,7 +399,7 @@ body {
   text-align: start;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: 0.32px;
   font-size: 16px;
   color: #434455;
@@ -425,7 +435,6 @@ body {
 
 .thirdli {
   background-color: #ffffff;
-  /*width: calc((100% - 72px) / 4);*/
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -551,7 +560,6 @@ body {
   padding-bottom: 0px;
 }
 .fourli {
-  /*width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   width: 288px;
@@ -568,7 +576,6 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-  
 }
 .fouritems {
   border: 1px solid #e7e9fc;
@@ -996,7 +1003,6 @@ body {
     padding-right: 10px;
     margin: auto;
   }
-
   .menu-open-btn {
     display: none;
   }
@@ -1032,14 +1038,12 @@ body {
   .firstsection {
     margin: auto;
     background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/tablet.jpg);
-     
-    }
-    
-  
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet.jpg);
+  }
+
   .firsttitle {
     width: 496px;
     font-style: normal;
@@ -1061,19 +1065,15 @@ body {
   }
   .secondcontainerul {
     display: grid;
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Розбиває контейнер на дві колонки рівного розміру */
-    gap: 20px; /* Відступ між елементами */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .thirdul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    grid-column-gap: 24px; /* Відступ між елементами по горизонталі */
-    max-width: 1128px;
+    grid-column-gap: 24px;
   }
 
   @media (width > 1158px) {
@@ -1142,7 +1142,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -1171,7 +1171,7 @@ body {
   }
 
   .secondcontainerul {
-    width: 1128px;
+    max-width: 1128px;
     display: flex;
     gap: 24px;
     align-items: center;
@@ -1215,7 +1215,7 @@ body {
     max-width: 1158px;
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 64px;
   }
   .logofooter {
     display: flex;
