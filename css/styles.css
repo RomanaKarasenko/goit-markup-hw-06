@@ -28,11 +28,11 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  overflow-x: hidden;
+  /*overflow-x: hidden;
   text-align: center;
   max-width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0;*/
 }
 
 .header {
@@ -64,6 +64,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  
 }
 .menu-close-btn {
   display: block;
@@ -82,6 +83,10 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-open-btn{
+  background-color: #fff;
+  border: none;
 }
 .header-mob-menu-item {
   display: flex;
@@ -115,6 +120,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.4px;
   color: #434455;
+ 
 }
 .address-mob-menu-items:first-child {
   margin-bottom: 24px;
@@ -126,6 +132,7 @@ body {
 .address-mob-menu-items:focus {
   color: #404bbf;
 }
+
 
 @media screen and (min-width: 1158px) {
   .header {
@@ -269,7 +276,7 @@ body {
 
 .firstsection {
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -278,7 +285,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: auto;
+  /*margin: auto;*/
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -297,7 +304,7 @@ body {
   flex-direction: column;
 }
 .firsttitle {
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
@@ -339,7 +346,7 @@ body {
 /*Second Section*/
 
 .secondsection {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -384,7 +391,7 @@ body {
   list-style-type: none;
   margin-bottom: 8px;
   align-self: stretch;
-  text-align: start;
+  text-align: center;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
@@ -407,7 +414,7 @@ body {
 
 .sectionthree {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .three {
@@ -438,7 +445,6 @@ body {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  display: flex;
   width: 264px;
   padding-bottom: 0px;
   flex-direction: column;
@@ -456,8 +462,8 @@ body {
 
 .thirdcardcontainer {
   padding: 32px 0;
-  display: flex;
-  width: 232px;
+  /*display: flex;*/
+  /*width: 232px;*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -535,8 +541,8 @@ body {
 /*Section four*/
 
 .sectionfour {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .four {
   flex-direction: column;
@@ -580,7 +586,7 @@ body {
 .fouritems {
   border: 1px solid #e7e9fc;
   border-top: none;
-  display: flex;
+  /*display: flex;*/
   padding: 32px 16px;
   flex-direction: column;
   justify-content: center;
@@ -643,7 +649,7 @@ body {
 }
 
 .footertext {
-  width: 288px;
+  width: 264px;
   text-align: start;
   line-height: 1.5;
   color: #f4f4fd;
@@ -716,7 +722,7 @@ body {
 .sociconsfooter {
   width: 208px;
   text-align: center;
-  margin-top: 64px;
+  /*margin-top: 64px;*/
 }
 
 /*Form*/
@@ -1048,6 +1054,7 @@ body {
     width: 496px;
     font-style: normal;
     font-weight: 700;
+    font-size: 56px;
     line-height: 60px; /* 107.143% */
     letter-spacing: 1.12px;
     text-align: center;
@@ -1062,18 +1069,22 @@ body {
   }
   .secondcontainerul {
     max-width: 768px;
-  }
-  .secondcontainerul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-column-gap: 24px;
+    row-gap: 48px;
+  }
+  .secondparagraph{
+    text-align:start;
   }
 
   .thirdul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    grid-column-gap: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
   }
 
   @media (width > 1158px) {
@@ -1089,7 +1100,7 @@ body {
   .fourul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 36px; /* Відступ між елементами по горизонталі */
+    grid-column-gap: 24px; /* Відступ між елементами по горизонталі */
     justify-items: center;
     max-width: 1128px;
     margin: auto;
@@ -1110,18 +1121,19 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
+    max-width: 560px;
+    /*justify-content: center;*/
   }
 
   .footerlogocontainer {
-    width: 246px;
+    /*width: 246px;*/
     margin-right: 36px;
   }
   .sociconsfooter {
-    width: 208px;
+    /*width: 208px;*/
   }
   .formcontainer {
-    width: 490px;
+    /*width: 490px;*/
   }
 
   .realform {
@@ -1169,7 +1181,16 @@ body {
     background-size: cover;
     margin: auto;
   }
-
+.secondsection {
+  padding: 120px 0;
+}
+.sectionthree {
+  padding: 96px 0;
+}
+..sectionfour {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
   .secondcontainerul {
     max-width: 1128px;
     display: flex;
